@@ -1,0 +1,101 @@
+---
+title: "Replication of Stellar et al. (2018): Awe and Humility"
+shorttitle: "Awe Replication"
+author:
+  - name: Felix Schönbrodt
+    corresponding: true
+    orcid: 0000-0002-8282-3910
+    email: felix.schoenbrodt@psy.lmu.de
+    affiliations:
+      - name: Generic University
+        department: Department of Scholarly Studies
+        address: 1234 Capital St.
+        city: New York
+        region: NY
+        country: USA
+        postal-code: 12084-1234
+author-note:
+  status-changes: 
+    affiliation-change: ~
+    deceased: ~
+  disclosures:
+    study-registration: ~
+    data-sharing: ~
+    related-report: ~
+    conflict-of-interest: ~
+    financial-support: ~
+    gratitude: ~
+    authorship-agreements: ~
+abstract: "This document is a template."
+impact-statement: "This template helps you get started."
+keywords: [Keyword 1, Keyword 2, Keyword 3]
+bibliography: bibliography.bib
+mask: false
+format:
+  apaquarto-docx: default
+  apaquarto-html: default
+  apaquarto-typst: 
+    keep-typ: true
+  apaquarto-pdf:
+    documentmode: man
+---
+
+
+```{r, echo=FALSE, include=FALSE}
+source("../0b-preprocessing.R", chdir=TRUE)
+source("../1-scales.R", chdir=TRUE)
+source("../2-descriptive_stat.R", chdir=TRUE)
+source("../3-confirmatory_analyses.R", chdir=TRUE)
+
+library(papaja)
+```
+
+<!-- The introduction should not have a level-1 heading such as Introduction. -->
+
+This is my first paragraph. Any section headings in the introduction should be in levels 2--5.
+
+## Section in Introduction
+
+This is a reference [@cohen2003applied].
+
+# Method
+
+The hypotheses, operationalizations, analysis plan, inference criteria, and sample size justification have been preregistered at <https://osf.io/537aq>. Open material and data are available at [https://osf.io/cy287](https://osf.io/cy287).
+
+## Participants
+
+The initial sample had `r nrow(dat)` participants. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat_final)`. The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)` (*SD* = `r sd(demo$age, na.rm = TRUE) %>% round(1)`, range: `r min(demo$age, na.rm = TRUE)`--`r max(demo$age, na.rm = TRUE)`).
+
+## Measures
+
+## Procedure
+
+## Statistical Procedure
+
+## Deviations from Preregistration
+
+Nur wenn es welche gab.
+
+# Results
+
+## Confirmatory Results
+
+The results was: `r apa_print(t_H1)$full_result`.
+
+# Discussion
+
+## Limitations and Future Directions
+
+## Conclusion
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+::: {#refs}
+:::
+
+# This Section Is an Appendix {#apx-a}
+
+
+# Another Appendix {#apx-b}

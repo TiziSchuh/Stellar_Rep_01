@@ -1,4 +1,41 @@
+#============================================================
+# Diverse exploratory tests
+#============================================================
+
+library(ggplot2)
+library(ggstatsplot)
+
+dat <- import("processed_data/Rep01_processed.csv")
+
+# Alternative Version of log transformation for H1:
+# Use the balance1_log measure (with +1 added before log transformation)
+# ========================================================
+
+# H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
+
+# This time, do *not* exclude the zero-weak cases. Also keep the outliers.
+  dat_H1_alt <- dat %>%
+    filter(condition %in% c("exp_old", "control"))
+
+ggbetweenstats(
+  data = dat_H1_alt,
+  x    = condition,
+  y    = balance1_log,
+  type = "parametric"
+)
+
+t.test(
+  dat_H1_alt$balance1_log[dat_H1_alt$condition == "control"],
+  dat_H1_alt$balance1_log[dat_H1_alt$condition == "exp_old"],
+  alternative = "greater",
+  var.equal = TRUE
+)
+
+
+
+
 ## Prereg I4: Exploratory research questions
+#---------------------------------------------------------------
 
 # E1: The new (more modern) awe inducing video leads to higher awe ratings compared to the old awe inducing video.
 

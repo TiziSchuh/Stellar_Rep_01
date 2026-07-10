@@ -1,3 +1,10 @@
+#============================================================
+# This file aggegates multiple xlsx files with individual
+# strenth/weakness ratings into a single file, computes the ICC of
+# the ratings, and creates a consensus rating for each participant.
+# Inconsistencies between raters are flagged and need to be resolved manually.
+#============================================================
+
 library(rio)
 library(dplyr)
 
@@ -58,3 +65,4 @@ ratings$num_weaks <- NA
 export(ratings, "export/Rep01_ratings.xlsx")
 
 # manual step: Agree on the consensus rating in the columns num_strengths and num_weaks.
+# Save the resulting file as "raw_data/Rep01_ratings.xlsx" and import it in the next step.

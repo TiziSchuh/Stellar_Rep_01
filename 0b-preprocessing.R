@@ -1,4 +1,6 @@
-## This script applies all preregistered preprocessing steps
+#============================================================
+# This script applies all preregistered preprocessing steps
+#============================================================
 
 library(dplyr)
 library(rio)
@@ -10,7 +12,10 @@ nrow(dat)
 ratings <- import("raw_data/Rep01_ratings.xlsx")
 
 # merge the ratings into the main data frame
-dat <- inner_join(dat, ratings %>% select(pid, num_strengths, num_weaks), by = c("pid"))
+dat <- inner_join(
+  dat, 
+  ratings %>% select(pid, num_strengths, num_weaks), 
+  by = c("pid"))
 
 # delete all-empty rows. As `condition` is defined at the beginning of the data collection, it can be used as filter variable
 print(paste0("Number of participants with empty condition: ", sum(dat$condition == "")))
