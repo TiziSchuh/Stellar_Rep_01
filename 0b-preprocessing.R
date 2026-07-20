@@ -7,7 +7,7 @@ library(rio)
 
 # load data
 dat0 <- import("raw_data/Rep01_anonymized.csv")
-demo <- import("raw_data/Rep01_demographics_anonymized.csv")
+demo0 <- import("raw_data/Rep01_demographics_anonymized.csv")
 nrow(dat0)
 ratings <- import("raw_data/Rep01_ratings.xlsx")
 
@@ -24,6 +24,17 @@ dat0 <- dat0 %>% filter(condition != "")
 print(paste0("Non-zombie participants: ", nrow(dat0)))
 
 export(dat0, "processed_data/Rep01_no_zombies.csv")
+
+# =================================================================
+# Factor levels for demographics
+
+demo <- demo0 %>%
+  mutate(
+    gender = factor(gender, 
+      levels = 1:6, 
+      labels = c("female", "male", "non-binary", "no gender", "prefer not to say", "other"))
+  )
+
 
 # =================================================================
 # From now on, we store deletions in separate Boolean variables and
@@ -97,3 +108,4 @@ table(dat$condition)
 export(dat %>% select(pid), "export/valid_pids.csv")
 
 export(dat, "processed_data/Rep01_cleaned.csv")
+export(demo, "processed_data/Rep01_demo_cleaned.csv")

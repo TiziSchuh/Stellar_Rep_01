@@ -9,6 +9,21 @@ library(psych)
 library(effectsize)
 
 dat <- import("processed_data/Rep01_processed.csv")
+demo <- import("processed_data/Rep01_demo_cleaned.csv")
+
+# Demographics
+#============================================================
+
+nrow(demo)
+summary(demo$age)
+sd(demo$age)
+
+table(demo$gender)
+
+
+
+# Scales
+#============================================================
 
 summary(dat$awe_scale)
 
