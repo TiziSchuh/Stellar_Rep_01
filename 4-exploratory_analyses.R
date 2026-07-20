@@ -13,7 +13,7 @@ dat <- import("processed_data/Rep01_processed.csv")
 
 # H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
 
-# This time, do *not* exclude the zero-weak cases. Also keep the outliers.
+# This time, do *not* exclude the zero-weakness cases. Also keep the outliers.
   dat_H1_alt <- dat %>%
     filter(condition %in% c("exp_old", "control"))
 

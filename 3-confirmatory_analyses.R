@@ -4,6 +4,7 @@
 
 library(ggplot2)
 library(ggstatsplot)
+library(pwr)
 
 dat <- import("processed_data/Rep01_processed.csv")
 
@@ -16,10 +17,13 @@ dat <- import("processed_data/Rep01_processed.csv")
 
 table(Outlier = dat$has_outlier, Zero_Weaks= dat$has_zero_weaks)
 table(dat$condition, Zero_Weaks= dat$has_zero_weaks)
+table(dat$has_zero_weaks)
 
 dat_H1 <- dat %>%
   filter(!has_outlier, !has_zero_weaks) %>%
   filter(condition %in% c("exp_old", "control"))
+
+nrow(dat_H1)
 
 ggbetweenstats(
   data = dat_H1,
@@ -37,6 +41,17 @@ t_H1 <- t.test(
 )
 
 t_H1
+
+# Compute the actually achieved power (because we did not achieve the planned sample size at the end of the semester).
+# --> We actually achieved 70% power to detect the effect size of d = 0.51 reported in the original publication.
+pwr.t.test(
+  n = nrow(dat_H1) / 2,
+  d = 0.51,
+  sig.level = 0.05,
+  type = "two.sample",
+  alternative = "greater"
+)
+
 
 
 # H2: Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.

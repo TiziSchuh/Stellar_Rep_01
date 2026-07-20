@@ -18,7 +18,7 @@ awe_items <- dat %>% select(awe, amazement, fascination)
 dat$awe_scale <- rowMeans(awe_items)
 
 # Cronbach's alpha
-cronbach_alpha <- alpha(awe_items)
+cronbach_alpha <- psych::alpha(awe_items)
 cronbach_alpha
 
 #--------------------------------------------------------
