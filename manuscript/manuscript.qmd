@@ -32,22 +32,24 @@ keywords: [Keyword 1, Keyword 2, Keyword 3]
 bibliography: bibliography.bib
 mask: false
 format:
-  apaquarto-docx: default
-  apaquarto-html: default
-  apaquarto-typst: 
-    keep-typ: true
   apaquarto-pdf:
     documentmode: man
+  apaquarto-docx: default
+  apaquarto-html: default
 ---
 
 
 ```{r, echo=FALSE, include=FALSE}
+
+# This manuscript is rendered within its subfolder /manuscript. Therefore we need paths
+# relative to the manuscript. "../" means: go one directory up.
 source("../0b-preprocessing.R", chdir=TRUE)
 source("../1-scales.R", chdir=TRUE)
 source("../2-descriptive_stat.R", chdir=TRUE)
 source("../3-confirmatory_analyses.R", chdir=TRUE)
+source("../4-exploratory_analyses.R", chdir=TRUE)
 
-library(papaja)
+library(papaja)  # for formatting of APA style t-tests etc.
 ```
 
 <!-- The introduction should not have a level-1 heading such as Introduction. -->
@@ -64,7 +66,7 @@ The hypotheses, operationalizations, analysis plan, inference criteria, and samp
 
 ## Participants
 
-The initial sample had `r nrow(dat)` participants. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat_final)`. The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)` (*SD* = `r sd(demo$age, na.rm = TRUE) %>% round(1)`, range: `r min(demo$age, na.rm = TRUE)`--`r max(demo$age, na.rm = TRUE)`).
+The initial sample had `r nrow(dat0)` participants. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat0$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat0$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat)`. The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)` (*SD* = `r sd(demo$age, na.rm = TRUE) %>% round(1)`, range: `r min(demo$age, na.rm = TRUE)`--`r max(demo$age, na.rm = TRUE)`).
 
 ## Measures
 
