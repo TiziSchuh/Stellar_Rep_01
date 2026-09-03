@@ -4,7 +4,7 @@ This fork adopts the structure of the main branch [see original README below].
 
 
 ***
-
+(original README taken from https://github.com/nicebread/Stellar_Rep_01)
 
 This is the shared course repository for analyzing the LMU replication study of Stellar et al. (2018), done in summer 2026 as part of the [CREP project](https://www.crep-psych.org).
 
