@@ -1,6 +1,6 @@
-This is my -- Tizian Schuhbeck -- *Hausarbeit* repository, required as part of the LMU course **Forschungsorientiertes Praktikum I – Grundlagen der Forschung (BSc Psychologie, Summer term 2026)** given by Prof. Dr. Felix **Schönbrodt**.
+This is my – Tizian Schuhbeck – *Hausarbeit* repository fork, required as part of the LMU course **Forschungsorientiertes Praktikum I – Grundlagen der Forschung (BSc Psychologie, Summer term 2026)** given by Prof. Dr. Felix **Schönbrodt**.
 
-This fork adopts the structure of the main branch -- as described in the original README -- as follows:
+This fork adopts the structure of the main branch [see original README below].
 
 
 ***
