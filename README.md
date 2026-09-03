@@ -1,3 +1,11 @@
+This is my -- Tizian Schuhbeck -- *Hausarbeit* repository, required as part of the LMU course **Forschungsorientiertes Praktikum I – Grundlagen der Forschung (BSc Psychologie, Summer term 2026)** given by Prof. Dr. Felix **Schönbrodt**.
+
+This fork adopts the structure of the main branch -- as described in the original README -- as follows:
+
+
+***
+
+
 This is the shared course repository for analyzing the LMU replication study of Stellar et al. (2018), done in summer 2026 as part of the [CREP project](https://www.crep-psych.org).
 
 - [Course teaching material](https://nicebread.github.io/Empra1_2026/)
