@@ -1,19 +1,16 @@
 ---
-title: "Replication of Stellar et al. (2018): Awe and Humility"
-shorttitle: "Awe Replication"
+title: "A Replication of Study 3 in Stellar et al. (2018): Awe and Humility"
+shorttitle: "Replication of Stellar et al. (2018)"
 author:
-  - name: Felix Schönbrodt
+  - name: Tizian M. B. Schuhbeck
     corresponding: true
-    orcid: 0000-0002-8282-3910
-    email: felix.schoenbrodt@psy.lmu.de
+    orcid: 0009-0005-5903-674X
+    email: t.schuhbeck@campus.lmu.de
     affiliations:
-      - name: Generic University
-        department: Department of Scholarly Studies
-        address: 1234 Capital St.
-        city: New York
-        region: NY
-        country: USA
-        postal-code: 12084-1234
+      - name: Ludwig-Maximilians-Universität München
+        department: Department of Psychology
+      - name: Goethe-Universität Frankfurt
+        department: Department of Psychology
 author-note:
   status-changes: 
     affiliation-change: ~
@@ -26,9 +23,9 @@ author-note:
     financial-support: ~
     gratitude: ~
     authorship-agreements: ~
-abstract: "This document is a template."
+abstract: "As part of the CREP project..."
 impact-statement: "This template helps you get started."
-keywords: [Keyword 1, Keyword 2, Keyword 3]
+keywords: [Replication, Awe, Humility]
 bibliography: bibliography.bib
 mask: false
 format:
@@ -43,6 +40,7 @@ format:
 
 # This manuscript is rendered within its subfolder /manuscript. Therefore we need paths
 # relative to the manuscript. "../" means: go one directory up.
+
 source("../0b-preprocessing.R", chdir=TRUE)
 source("../1-scales.R", chdir=TRUE)
 source("../2-descriptive_stat.R", chdir=TRUE)
@@ -52,13 +50,22 @@ source("../4-exploratory_analyses.R", chdir=TRUE)
 library(papaja)  # for formatting of APA style t-tests etc.
 ```
 
+
+
+
+
+
 <!-- The introduction should not have a level-1 heading such as Introduction. -->
 
-This is my first paragraph. Any section headings in the introduction should be in levels 2--5.
+The seminal findings of the @open2015estimating have triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar unchallenged publications by and large.
+In an attempt to remedy this fact, there has been an onging effort within the psychological research community to perform replication studies, aiming to reevaluate the validity of affected publications and ultimately restore trust in the body of psychological knowledge.
 
-## Section in Introduction
+## The Aim of this Replicating Study
 
-This is a reference [@cohen2003applied].
+As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to endeavour descirbed above, providing a replication study of 'Study 3' in @stellar2018awe: Awe and Humility -- details regarding theoretical background and study design are outlined in the original publication.
+To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials available on the platform Open Science Framework (OSF).
+
+
 
 # Method
 
