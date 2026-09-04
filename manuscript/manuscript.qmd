@@ -9,8 +9,6 @@ author:
     affiliations:
       - name: Ludwig-Maximilians-Universität München
         department: Department of Psychology
-      - name: Goethe-Universität Frankfurt
-        department: Department of Psychology
 author-note:
   status-changes: 
     affiliation-change: ~
@@ -23,6 +21,11 @@ author-note:
     financial-support: ~
     gratitude: ~
     authorship-agreements: ~
+course:  \"Forschungsorientiertes Praktikum I – Grundlagen der Forschung"
+professor: Prof. Dr. Felix Schönbrodt
+duedate: 16.9.2026
+note: |
+  Matriculation No.: 11596109
 abstract: "As part of the CREP project..."
 impact-statement: "This template helps you get started."
 keywords: [Replication, Awe, Humility]
@@ -30,7 +33,7 @@ bibliography: bibliography.bib
 mask: false
 format:
   apaquarto-pdf:
-    documentmode: man
+    documentmode: stu
   apaquarto-docx: default
   apaquarto-html: default
 ---
@@ -57,14 +60,14 @@ library(papaja)  # for formatting of APA style t-tests etc.
 
 <!-- The introduction should not have a level-1 heading such as Introduction. -->
 
-The seminal findings of the @open2015estimating have triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar unchallenged publications by and large.
-In an attempt to remedy this fact, there has been an onging effort within the psychological research community to perform replication studies, aiming to reevaluate the validity of affected publications and ultimately restore trust in the body of psychological knowledge.
+The seminal findings of the @open2015estimating triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar widely unchallenged publications by and large.
+Since then, there has been an onging effort within the psychological research community to actively persue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. {{wordcount}}
 
 ## The Aim of this Replicating Study
 
 As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to endeavour descirbed above, providing a replication study of 'Study 3' in @stellar2018awe: Awe and Humility -- details regarding theoretical background and study design are outlined in the original publication.
 To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials available on the platform Open Science Framework (OSF).
-
+{{wordcount}}
 
 
 # Method
