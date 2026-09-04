@@ -28,7 +28,7 @@ note: |
   Matriculation No.: 11596109
 abstract: "As part of the CREP project..."
 impact-statement: "This template helps you get started."
-keywords: [Replication, Awe, Humility]
+keywords: [Registered Replication, Humility, Awe, Emotion, Self-Concept, CREP, Video Manipulation]
 bibliography: bibliography.bib
 mask: false
 format:
@@ -63,12 +63,17 @@ library(papaja)  # for formatting of APA style t-tests etc.
 
 The seminal findings of the @open2015estimating triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar widely unchallenged publications by and large.
 Since then, there has been an onging effort within the psychological research community to actively persue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. 
+As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to the endeavour descirbed above, investigating the replicability of the results in 'Study 3' of @stellar2018awe: Awe and Humility.
 
-## The Aim of this Replicating Study
 
-As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to endeavour descirbed above, providing a replication study of 'Study 3' in @stellar2018awe: Awe and Humility -- details regarding theoretical background and study design are outlined in the original publication.
+## A Direct Replication of Stellar et al. (2018)
+
+In Study 3, rooted in an appraisal-tendency framework of emotion, @stellar2018awe hypothesize momentary experiences of awe to cause a temporary increase in humility. 
+The authors operationalize this hypothesis by means of a randomized video intervention, designed to induce either a state of awe or a neutral state, with a subsequent evaluation on a behavioral measure of humility. 
+The theoretical background and study design are detailed in the original publication.
+
+For our direct replication, we aim to adopt the authors orignial methodology and analysis wherever possible. As our recruitment of participants has taken place in germany, we have opted to translate the study material into german for our replication.
 To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials available on the platform Open Science Framework (OSF).
-
 
 
 # Method
@@ -76,9 +81,20 @@ To ensure transparency, following the general recommendation of adopting the pri
 The scripts required for reproducing the following results have been made publicaly available on GitHub at <https://github.com/TiziSchuh/Stellar_Rep_01>.
 The hypotheses, operationalizations, analysis plan, inference criteria, and sample size justification have been preregistered at <https://osf.io/537aq>. Open material and data can all be found at [https://osf.io/cy287](https://osf.io/cy287). 
 
-H1 ...
+As outlined in the preregistration, the confirmatory hypotheses 
 
-It should contain one individual (exploratory) analysis, which also is described in the course report.
+H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
+
+H2: Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
+
+
+Independent Variable (IV): Video condition (Neutral vs. Awe Original vs. Awe Modern).
+Dependent Variable (DV): State humility, operationalized as the log-transformed ratio of listed personal strengths to weaknesses. The number of strengths and weaknesses are counted by two independent raters from the free-text answer of the participants in a writing exercise. We use the “Codebook Instructions for Counting Participant-Reported Strengths and Weaknesses” from https://doi.org/10.26443/msurj.v19i1.231 (Appendix B)
+
+The awe emotional state is computed as the mean of three items (Item1: Staunen, Item 2: Faszination, Item 3: Ehrfurcht.)
+
+
+Furthermore, It should contain one individual (exploratory) analysis, which also is described in the course report.
 
 E ...
 

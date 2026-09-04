@@ -5,12 +5,7 @@ This fork retains the structure of the main branch created by [Felix Schönbrodt
 
 ### Contact Information
 
-Tizian Schuhbeck
-
-LMU Munich, Department of Psychology
-
-Matriculation No.: 11596109
-
+Tizian Schuhbeck | LMU Munich, Department of Psychology | Matriculation No.: 11596109
 t.schuhbeck@campus.lmu.de
 
 ***
