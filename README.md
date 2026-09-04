@@ -3,6 +3,16 @@ This is my, Tizian Schuhbeck's, repository fork for the *Hausarbeit* as part of 
 This fork retains the structure of the main branch created by [Felix Schönbrodt](https://nicebread.de) under a CC-BY 4.0 license [see original README below].
 
 
+### Contact Information
+
+Tizian Schuhbeck
+
+LMU Munich, Department of Psychology
+
+Matriculation No.: 11596109
+
+t.schuhbeck@campus.lmu.de
+
 ***
 (original README taken from https://github.com/nicebread/Stellar_Rep_01)
 

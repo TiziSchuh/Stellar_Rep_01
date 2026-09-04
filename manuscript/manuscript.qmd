@@ -36,6 +36,7 @@ format:
     documentmode: stu
   apaquarto-docx: default
   apaquarto-html: default
+word-count: true
 ---
 
 
@@ -61,18 +62,25 @@ library(papaja)  # for formatting of APA style t-tests etc.
 <!-- The introduction should not have a level-1 heading such as Introduction. -->
 
 The seminal findings of the @open2015estimating triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar widely unchallenged publications by and large.
-Since then, there has been an onging effort within the psychological research community to actively persue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. {{wordcount}}
+Since then, there has been an onging effort within the psychological research community to actively persue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. 
 
 ## The Aim of this Replicating Study
 
 As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to endeavour descirbed above, providing a replication study of 'Study 3' in @stellar2018awe: Awe and Humility -- details regarding theoretical background and study design are outlined in the original publication.
 To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials available on the platform Open Science Framework (OSF).
-{{wordcount}}
+
 
 
 # Method
 
-The hypotheses, operationalizations, analysis plan, inference criteria, and sample size justification have been preregistered at <https://osf.io/537aq>. Open material and data are available at [https://osf.io/cy287](https://osf.io/cy287).
+The scripts required for reproducing the following results have been made publicaly available on GitHub at <https://github.com/TiziSchuh/Stellar_Rep_01>.
+The hypotheses, operationalizations, analysis plan, inference criteria, and sample size justification have been preregistered at <https://osf.io/537aq>. Open material and data can all be found at [https://osf.io/cy287](https://osf.io/cy287). 
+
+H1 ...
+
+It should contain one individual (exploratory) analysis, which also is described in the course report.
+
+E ...
 
 ## Participants
 
