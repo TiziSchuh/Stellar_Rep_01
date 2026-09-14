@@ -1,0 +1,14 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{fig-procedure}\emph{An Illustration of the Study
+Procedure.}}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{./manuscript_files/figure-html/study design.png}
+
+}
+
+\end{figure*}
