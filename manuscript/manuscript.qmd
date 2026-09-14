@@ -78,18 +78,25 @@ Our recruitment process follows the snowball sampling principle [@goodman1961sno
 All known deviations are documented in their entirety within the preregistration form. 
 For the direct replication, we aim to replicate the following hypothesis.
 
+\begin{center}
 H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
+\end{center}
 
-In addition to our direct replication, we extend our study by the following confirmatory hypothesis, investigated using the same data.
+In addition to our direct replication, we introduce a third condition, in which participants are shown a more modern video, which is also designed to induce awe. 
+Based on this condition, we extend our study the following confirmatory hypothesis.
 
+\begin{center}
 H2: Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
+\end{center}
 
-Furthermore, we extend our study by the following exploratory hypothesis.
+Furthermore, we aim to investigate the narutal follow-up question of how the two experimental conditions compare by means of the following exploratory hypothesis.
 
+\begin{center}
 E1: The new (more modern) awe inducing video leads to higher awe ratings compared to
 the old awe inducing video.
+\end{center}
 
-Note, that as documented within the preregistration, we have formulated a list of multiple supplementary exploratory hypotheses. 
+Note, that as documented within the preregistration, we have formulated a total of six supplementary exploratory hypotheses. 
 Of these, E1 was chosen at random prior to any further data analyses.
 The full list of all exploratory hypotheses is documented in the publicly available preregistration form.
 
