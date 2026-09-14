@@ -78,25 +78,25 @@ Our recruitment process follows the snowball sampling principle [@goodman1961sno
 All known deviations are documented in their entirety within the preregistration form. 
 For the direct replication, we aim to replicate the following hypothesis.
 
-\begin{center}
-H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
-\end{center}
+\begin{itemize}
+\item[H1:] Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
+\end{itemize}
 
-In addition to our direct replication, we introduce a third condition, in which participants are shown a more modern video, which is also designed to induce awe. 
+\noindent In addition to our direct replication, we introduce a third condition, in which participants are shown a more modern video, which is also designed to induce awe. 
 Based on this condition, we extend our study the following confirmatory hypothesis.
 
-\begin{center}
-H2: Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
-\end{center}
+\begin{itemize}
+\item[H2:] Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
+\end{itemize}
 
-Furthermore, we aim to investigate the narutal follow-up question of how the two experimental conditions compare by means of the following exploratory hypothesis.
+\noindent Furthermore, we aim to investigate the narutal follow-up question of how the two experimental conditions compare by means of the following exploratory hypothesis.
 
-\begin{center}
-E1: The new (more modern) awe inducing video leads to higher awe ratings compared to
+\begin{itemize}
+\item[E1:] The new (more modern) awe inducing video leads to higher awe ratings compared to
 the old awe inducing video.
-\end{center}
+\end{itemize}
 
-Note, that as documented within the preregistration, we have formulated a total of six supplementary exploratory hypotheses. 
+\noindent Note, that as documented within the preregistration, we have formulated a total of six supplementary exploratory hypotheses. 
 Of these, E1 was chosen at random prior to any further data analyses.
 The full list of all exploratory hypotheses is documented in the publicly available preregistration form.
 
@@ -107,29 +107,19 @@ The full list of all exploratory hypotheses is documented in the publicly availa
 The scripts required for reproducing the following results have been made publicaly available on GitHub at <https://github.com/TiziSchuh/Stellar_Rep_01>.
 The hypotheses, operationalizations, analysis plan, inference criteria, and sample size justification have been preregistered at <https://osf.io/537aq>. Open material and data can all be found at [https://osf.io/cy287](https://osf.io/cy287). 
 
-As outlined in the preregistration, the confirmatory hypotheses 
+## Participants
 
-H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
+The initial sample had `r nrow(dat0)` participants. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat0$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat0$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat)`, with randomization having resulted in conditions being distributed `r sum(dat$condition == "control")` (neutral video), `r sum(dat$condition == "exp_old")` (original awe video) and  `r sum(dat$condition == "exp_new")` (modern awe video).
+The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)` (*SD* = `r sd(demo$age, na.rm = TRUE) %>% round(1)`, range: `r min(demo$age, na.rm = TRUE)`--`r max(demo$age, na.rm = TRUE)`). 
 
-H2: Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
 
+## Measures and Materials
 
 Independent Variable (IV): Video condition (Neutral vs. Awe Original vs. Awe Modern).
 Dependent Variable (DV): State humility, operationalized as the log-transformed ratio of listed personal strengths to weaknesses. The number of strengths and weaknesses are counted by two independent raters from the free-text answer of the participants in a writing exercise. We use the “Codebook Instructions for Counting Participant-Reported Strengths and Weaknesses” from https://doi.org/10.26443/msurj.v19i1.231 (Appendix B)
 
 The awe emotional state is computed as the mean of three items (Item1: Staunen, Item 2: Faszination, Item 3: Ehrfurcht.)
 
-
-Furthermore, It should contain one individual (exploratory) analysis, which also is described in the course report.
-
-E1: The new (more modern) awe inducing video leads to higher awe ratings compared to
-the old awe inducing video.
-
-## Participants
-
-The initial sample had `r nrow(dat0)` participants. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat0$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat0$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat)`. The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)` (*SD* = `r sd(demo$age, na.rm = TRUE) %>% round(1)`, range: `r min(demo$age, na.rm = TRUE)`--`r max(demo$age, na.rm = TRUE)`).
-
-## Measures
 
 - measure of awe (3 out of 5 items in 7? point likert scale)
 
