@@ -26,7 +26,7 @@ professor: Prof. Dr. Felix Schönbrodt
 duedate: 16.9.2026
 note: |
   Matriculation No.: 11596109
-abstract: "As part of the CREP project..."
+abstract: "As part of the CREP project... we follow a direct replication and extension approach."
 impact-statement: "This template helps you get started."
 keywords: [Registered Replication, Humility, Awe, Emotion, Self-Concept, CREP, Video Manipulation]
 bibliography: bibliography.bib
@@ -63,17 +63,36 @@ library(papaja)  # for formatting of APA style t-tests etc.
 
 The seminal findings of the @open2015estimating triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar widely unchallenged publications by and large.
 Since then, there has been an onging effort within the psychological research community to actively persue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. 
-As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to the endeavour descirbed above, investigating the replicability of the results in 'Study 3' of @stellar2018awe: Awe and Humility.
-
-
-## A Direct Replication of Stellar et al. (2018)
-
-In Study 3, rooted in an appraisal-tendency framework of emotion, @stellar2018awe hypothesize momentary experiences of awe to cause a temporary increase in humility. 
+As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to the endeavour descirbed above, investigating the replicability of the results in 'Study 3' of @stellar2018awe: Awe and Humility. 
+In this study,  the authors hypothesize momentary experiences of awe to cause a temporary increase in humility. 
 The authors operationalize this hypothesis by means of a randomized video intervention, designed to induce either a state of awe or a neutral state, with a subsequent evaluation on a behavioral measure of humility. 
-The theoretical background and study design are detailed in the original publication.
+Both theoretical background and original study design are outlined in detail in the original publication of @stellar2018awe. 
+To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials for this replication study available on the platform Open Science Framework (OSF), in particular the preregistration form at <https://osf.io/537aq>.
 
-For our direct replication, we aim to adopt the authors orignial methodology and analysis wherever possible. As our recruitment of participants has taken place in germany, we have opted to translate the study material into german for our replication.
-To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials available on the platform Open Science Framework (OSF).
+
+## A Direct Replication and Extension of Stellar et al. (2018)
+
+To ensure a direct replication, we aim to adopt the authors orignial methodology and analysis wherever possible. 
+As our recruitment of participants has taken place in germany, however, we have opted to translate the study material into german, in particular the audio track for the neutral condition video. 
+Our recruitment process follows the snowball sampling principle [@goodman1961snowball], consequently our sample consits of mostly students, as well as their friends and relatives, resulting in demographics distinct from to the original sample of @stellar2018awe. 
+All known deviations are documented in their entirety within the preregistration form. 
+For the direct replication, we aim to replicate the following hypothesis.
+
+H1: Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
+
+In addition to our direct replication, we extend our study by the following confirmatory hypothesis, investigated using the same data.
+
+H2: Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
+
+Furthermore, we extend our study by the following exploratory hypothesis.
+
+E1: The new (more modern) awe inducing video leads to higher awe ratings compared to
+the old awe inducing video.
+
+Note, that as documented within the preregistration, we have formulated a list of multiple supplementary exploratory hypotheses. 
+Of these, E1 was chosen at random prior to any further data analyses.
+The full list of all exploratory hypotheses is documented in the publicly available preregistration form.
+
 
 
 # Method
@@ -96,7 +115,8 @@ The awe emotional state is computed as the mean of three items (Item1: Staunen, 
 
 Furthermore, It should contain one individual (exploratory) analysis, which also is described in the course report.
 
-E ...
+E1: The new (more modern) awe inducing video leads to higher awe ratings compared to
+the old awe inducing video.
 
 ## Participants
 
@@ -104,13 +124,25 @@ The initial sample had `r nrow(dat0)` participants. We preregistered to exclude 
 
 ## Measures
 
+- measure of awe (3 out of 5 items in 7? point likert scale)
+
+- measure of humility (writing excercise, count and transform...)
+
 ## Procedure
+
+One-time, cross-sectional online study. Data collection: 19.06.2026 - 10.07.2026.
+Participants first watch the video, then do the strength/weakness writing exercise, then
+report on their emotional state. Finally they report on the control questions.
 
 ## Statistical Procedure
 
+Exclude persons with zero weakness to calculate log. Through log we get more normally distributed data.
+For H1 and H2, we perform t-test with a p-value of...
+
+
 ## Deviations from Preregistration
 
-Nur wenn es welche gab.
+Power not enough bc valid participants?
 
 # Results
 
@@ -118,9 +150,15 @@ Nur wenn es welche gab.
 
 The results was: `r apa_print(t_H1)$full_result`.
 
+## Exploratory Results
+
+The new video... (just as effective on awe measure, effect also non-significant)
+
 # Discussion
 
 ## Limitations and Future Directions
+
+lack of evidence is not evidence of absence. Maybe just power not big enough or unlucky... but for this: CREP. Also, we have not tested for MI, explicitely investigating to what extent the translation may have an impact on the reproducability of the effect would adress this limitation. 
 
 ## Conclusion
 
