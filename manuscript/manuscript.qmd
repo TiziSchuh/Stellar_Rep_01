@@ -78,23 +78,23 @@ Our recruitment process follows the snowball sampling principle [@goodman1961sno
 All known deviations are documented in detail within the preregistration form. 
 For the direct replication, we aim to replicate the following hypothesis.
 
-\begin{itemize}
+\begin{itemize}\vspace{-1em}
 \item[H1:] Relative to a neutral control condition, the original awe inducing video increases humility in a behavioral measure.
-\end{itemize}
+\end{itemize}\vspace{-1em}
 
 \noindent We extend the replication study by introducing a third condition, in which participants are shown a more modern video, which is also designed to induce awe. 
 Based on this condition, we additionally investigate the following confirmatory hypothesis.
 
-\begin{itemize}
+\begin{itemize}\vspace{-1em}
 \item[H2:] Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
-\end{itemize}
+\end{itemize}\vspace{-1em}
 
 \noindent Furthermore, we aim to adress the narutal follow-up question of how the two experimental conditions compare by means of the following exploratory hypothesis.
 
-\begin{itemize}
+\begin{itemize}\vspace{-1em}
 \item[E1:] The new (more modern) awe inducing video leads to higher awe ratings compared to
 the old awe inducing video.
-\end{itemize}
+\end{itemize}\vspace{-1em}
 
 \noindent Note, that as documented in the preregistration, we have formulated a total of six supplementary exploratory hypotheses. 
 Of these, E1 was chosen at random prior to any further data analyses.
@@ -109,7 +109,7 @@ The hypotheses, operationalizations, analysis plan, inference criteria, and samp
 
 ## Participants
 
-The initial sample had `r nrow(dat0)` participants. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat0$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat0$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat)`, resulting in conditions being distributed `r sum(dat$condition == "control")` (neutral video), `r sum(dat$condition == "exp_old")` (original awe video) and  `r sum(dat$condition == "exp_new")` (modern awe video).
+We note that in the following, we described, analysed and drew conclusions from interim data, which was collected from 19.06.26 to 10.07.26 and consisted of `r nrow(dat0)` participants before exclusions. We preregistered to exclude participants who did not write anything in the writing assignment (`r sum(!dat0$has_writing_assignment)` exclusions) or indicated that their data should not be used (`r sum(!dat0$has_agreed)` exclusions), leading to a final sample size of *n* = `r nrow(dat)`, resulting in conditions being distributed `r sum(dat$condition == "control")` (neutral video), `r sum(dat$condition == "exp_old")` (original awe video) and  `r sum(dat$condition == "exp_new")` (modern awe video).
 The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)` (*SD* = `r sd(demo$age, na.rm = TRUE) %>% round(1)`, range: `r min(demo$age, na.rm = TRUE)`--`r max(demo$age, na.rm = TRUE)`). 
 `r sum(demo$gender == "female")` participants reported identifying as female, `r sum(demo$gender == "male")` as male and `r sum(demo$gender == "non-binary")` as non-binary, with `r sum(demo$gender == "prefer not to say")` participant opting not to report their gender identity.
 
@@ -117,35 +117,50 @@ The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)`
 ## Measures and Materials
 
 We operationalized our hypotheses by measuring three variables. For the Independent Variable (IV), we measured the randomized video condition with levels "neutral", "awe original" and "awe modern".
-We then measured awe as an emotional state on a behavioral scale, computed as the mean of three items ("Staunen", "Faszination" and "Ehrfurcht"), encoding responses on a seven point likert scale each.
+We then measured awe as an emotional state on a behavioral scale as as the mean of the three items "Staunen", "Faszination", with responses on a seven point likert scale each.
 
 For the Dependent Variable (DV), we measured the state of humility as the log-transformed ratio of listed personal strengths to weaknesses. The number of strengths and weaknesses are counted by two independent raters from the free-text answer of the participants in a writing exercise. We use the “Codebook Instructions for Counting Participant-Reported Strengths and Weaknesses” from https://doi.org/10.26443/msurj.v19i1.231 (see Appendix B). 
 
 Link to code-book!!!
 
+
 ## Procedure
 
-We have provided an overview in @fig-procedure.
+Our study is a one-time, cross-sectional online study. 
+Participants are randomly assigned one of the three video conditions. We have provided an overview of the general steps within the study procedure in @fig-procedure.
+First, based on their respective condition, they will watch a corresponding video. 
+Subsequently, they will be asked to do a writing excercise, describing their strengths and weaknesess.
+After the excercise, they report on their emotional state. 
+Finally they report on the control questions.
+The entire study material -- in particular the respective \texttt{FormR} files -- can be found on OSF.
 
 ::: {#fig-procedure}
-![](/manuscript_files/figure-html/study design.png){width="80%"}
+![](/manuscript_files/figure-html/study design.png){width="90%"}
 
 *An Illustration of the Study Procedure.*
 :::
 
-One-time, cross-sectional online study. Data collection: 19.06.2026 - 10.07.2026.
-Participants first watch the video, then do the strength/weakness writing exercise, then
-report on their emotional state. Finally they report on the control questions.
 
 ## Statistical Procedure
 
-Exclude persons with zero weakness to calculate log. Through log we get more normally distributed data.
-For H1 and H2, we perform t-test with a p-value of...
+For H1, we mirrored the statistical procedure applied by @stellar2018awe. To ensure approximate normal-distribution of the DV (humility), we transformed the data by using the natural logarithm^[We preregistered the use of the "natural" logarithm, while at the same time -- erroniously -- denoting the \texttt{R}-funtion "\texttt{log2}" in the final line of the paragraph. In the actual analysis, we have used the correct \texttt{R}-function "\texttt{log}" instead.], i.e. the final humility score for each participant $i$ was calculated as
+\begin{equation*}
+  y_{\textrm{humility},i} = \mathrm{ln}\left(\frac{N_{\textrm{strengths},i}}{N_{\textrm{weaknesses},i}}\right) \,.
+\end{equation*}
+This necessitated the exlucsion of participants who did not write down anything that was counted as a weakness according to the code-book. Together with the removal of outliers, characterized by the number of strengths or weaknesses being more than 3 SDs over the mean, the final sample for H1 had n=`r nrow(dat_H1)` valid participants. Using this sample, we calculated a one-sided two-group t-test comparing the log-transformed balance score of the neutral video vs the awe original video at significance level $\alpha$=.05.
+ For H2, we applied the same transformation and exclusions described above, yielding n=`r nrow(dat_H2)` valid participants for the final sample, for which we calculated a two-group t-test comparing the log-transformed balance score of the neutral video vs the awe new video.
+
+For E1, we calculated the Cohen's $d$ effect size [@cohen1988spa] comparing the awe-score averages in the original video condition to the new video condition. maybe significance test...
+
+
+
 
 
 ## Deviations from Preregistration
 
-Power not enough bc valid participants?
+For H1, the sample size was only `r nrow(dat_H1)`, thus we only achieved a power of .696.
+
+
 
 # Results
 
