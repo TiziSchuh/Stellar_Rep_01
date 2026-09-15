@@ -158,27 +158,49 @@ For E1, we calculated the Cohen's $d$ effect size [@cohen1988spa] comparing the 
 
 ## Deviations from Preregistration
 
-For H1, the sample size was only `r nrow(dat_H1)`, thus we only achieved a power of .696.
-
+Since the final sample for H1 fell short of the 100 participants aimed for, we only achieved a power of .696, rather than the desired power of .80 or greater.
 
 
 # Results
 
+On the IV (awe), we observed the mean=`r round(mean(dat$awe_scale),digits=2)` and SD=`r round(sd(dat$awe_scale),digits=2)` after pre-analysis exclusions.
+On the DV (humility), we observed the mean=`r round(mean(dat_H1$balance_log),digits=2)` with SD=`r round(sd(dat_H1$balance_log),digits=2)` for the sample of H1, and the mean=`r round(mean(dat_H2$balance_log),digits=2)` with SD=`r round(sd(dat_H2$balance_log),digits=2)` for the sample of H2.
+
 ## Confirmatory Results
 
-The results was: `r apa_print(t_H1)$full_result`.
+For H1, the result of the t-test was `r apa_print(t_H1)$full_result`. Based on this, we reject the alternative hypothesis (the orignial awe video increses humility relative to the neutral condition) given the p-value p=`r round(t_H1$p.value, digits = 3)` exceeding the significance level $\alpha$=.05.
+
+For H2, the result of the t-test was `r apa_print(t_H2)$full_result`. Based on this, we reject the alternative hypothesis (the new awe video increses humility relative to the neutral condition) given the p-value p=`r round(t_H2$p.value, digits = 3)` exceeding the significance level $\alpha$=.05.
 
 ## Exploratory Results
 
-The new video... (just as effective on awe measure, effect also non-significant)
+Calculating Cohen's d for E1 (comparing new and old video w.r.t. inducing high levels of awe) yielded an effect size of `r round(d_E1, digits = 2)` with 95% CI [`r round(ci_d_E1$Lower.Conf.Limit.smd, digits = 2)`,`r round(ci_d_E1$Upper.Conf.Limit.smd, digits = 2)`]. 
+
 
 # Discussion
 
+In this paper, we provided a direct replication and extension of 'Study 3' in @stellar2018awe. We investigated the original hypothesis of momentary experiences of awe inducing humility on a behavioral measure. Furthermore, we introduced an alternative modern video condition, comparing it to the original video condition. 
+We were able to replicate and extend the study, however, we were not able to recreate the results in the original study -- our data did not provide evidence for the alternative hypothesis in H1.
+The new video condition (as part of our extension) neither resulted in the desired effect -- our data also did not provide evidence for the alternative hypothesis in H2. Furthermore, based on the effect calculated for E1, there seem to be no substantial differences in the effectiveness of inducing awe between the original and old video beyond sampling variability. 
+All in all, our results do not support the findings of @stellar2018awe.
+
+
 ## Limitations and Future Directions
 
-lack of evidence is not evidence of absence. Maybe just power not big enough or unlucky... but for this: CREP. Also, we have not tested for MI, explicitely investigating to what extent the translation may have an impact on the reproducability of the effect would adress this limitation. 
+Known differences. 
+
+Unkown differences.
+
+Power actually only .70
+
+Also, we have not tested for MI, explicitely investigating to what extent the translation may have an impact on the reproducability of the effect would adress this limitation. 
+
+lack of evidence is not evidence of absence [@altman1995statistics]. Based solely on the finding presented here, we cannot and should not rule out, that the power was simply not big enough. This limitation, however, is already being adressed precisely by the ongoing CREP project.
 
 ## Conclusion
+
+Essenz in 2-3 Sätzen.
+
 
 # References
 
@@ -187,7 +209,3 @@ lack of evidence is not evidence of absence. Maybe just power not big enough or 
 ::: {#refs}
 :::
 
-# This Section Is an Appendix {#apx-a}
-
-
-# Another Appendix {#apx-b}

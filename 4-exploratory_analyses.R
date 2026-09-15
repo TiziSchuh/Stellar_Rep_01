@@ -4,6 +4,7 @@
 
 library(ggplot2)
 library(ggstatsplot)
+library(MBESS)
 
 dat <- import("processed_data/Rep01_processed.csv")
 
@@ -39,6 +40,18 @@ t.test(
 
 # E1: The new (more modern) awe inducing video leads to higher awe ratings compared to the old awe inducing video.
 
+# claculate Cohen's d
+
+dat_awe_old <- dat$awe[dat$condition == "exp_old"]
+dat_awe_new <- dat$awe[dat$condition == "exp_new"]
+
+n_old <- length(dat_awe_old)
+n_new <- length(dat_awe_new)
+s_pool <- sqrt(((n_new-1)*sd(dat_awe_new)^2+(n_old-1)*sd(dat_awe_old)^2)/(n_new+n_old-2))
+
+d_E1 <- (mean(dat_awe_new) - mean(dat_awe_old))/s_pool
+
+ci_d_E1 <- ci.smd(smd = d_E1, n.1 = n_new, n.2 = n_old)
 
 # E2: The new (more modern) awe inducing video leads to more behavioral humility compared to the old awe inducing video.
 
