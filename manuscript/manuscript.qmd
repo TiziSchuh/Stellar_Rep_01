@@ -7,33 +7,23 @@ author:
     orcid: 0009-0005-5903-674X
     email: t.schuhbeck@campus.lmu.de
     affiliations:
-      - name: Ludwig-Maximilians-Universität München
-        department: Department of Psychology
+      - id: "lmu"
+        name: "Ludwig-Maximilians-Universität München, Munich, Germany"
+        department: "Department of Psychology"
+        ror: "https://ror.org/05591te55"
+        url: "https://www.lmu.de/"
 author-note:
-  status-changes: 
-    affiliation-change: ~
-    deceased: ~
-  disclosures:
-    study-registration: ~
-    data-sharing: ~
-    related-report: ~
-    conflict-of-interest: ~
-    financial-support: ~
-    gratitude: ~
-    authorship-agreements: ~
-course:  \"Forschungsorientiertes Praktikum I – Grundlagen der Forschung"
-professor: Prof. Dr. Felix Schönbrodt
-duedate: 16.9.2026
-note: |
-  Matriculation No.: 11596109
-abstract: "As part of the CREP project... we follow a direct replication and extension approach."
+  correspondence-note: |
+    Matrikelnr.: 11596109. This is the final report for the course
+    'Forschungsorientiertes Praktikum I', submitted on 2026-09-16.
+abstract: "Previous research by Stellar et al. (2018) found that momentary experiences of awe can temporarily increase humility. As part of the CREP project, the present study aimed to directly replicate Study 3 of Stellar et al. (2018) and extend it by examining whether a more contemporary awe-inducing video would produce a similar effect. Specifically, we investigated whether exposure to an awe-inducing video, relative to a neutral control video, would increase humility as assessed by a behavioral measure. Participants were randomly assigned to watch either a neutral video, the original awe-inducing video used by Stellar et al., or the new awe-inducing video. Subsequently, participants completed a writing task reporting personal strengths and weaknesses, from which a humility score was calculated. Neither the original awe-inducing video (t(71) = 0.80, p = .212) nor the new awe-inducing video (t(74) = −0.26, p = .602) significantly increased humility relative to the neutral condition. Furthermore, the two awe-inducing videos did not meaningfully differ in their effectiveness at eliciting awe (d = −0.03, 95% CI [−0.40, 0.34]). Thus, the present findings did not reproduce the effect reported by Stellar et al. (2018). Although the results may indicate that the relationship between momentary awe and humility is less robust than previously suggested, any claim about reproducibility based on our results is limited by the relatively low statistical power. Overall, this replication provides no evidence for the hypothesized effect in the present sample."
 impact-statement: "This template helps you get started."
 keywords: [Registered Replication, Humility, Awe, Emotion, Self-Concept, CREP, Video Manipulation]
 bibliography: bibliography.bib
 mask: false
 format:
   apaquarto-pdf:
-    documentmode: stu
+    documentmode: man
   apaquarto-docx: default
   apaquarto-html: default
 word-count: true
@@ -61,10 +51,10 @@ library(papaja)  # for formatting of APA style t-tests etc.
 
 <!-- The introduction should not have a level-1 heading such as Introduction. -->
 
-The seminal findings of the @open2015estimating triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thusfar widely unchallenged publications by and large.
-Since then, there has been an onging effort within the psychological research community to actively persue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. 
+The seminal findings of the @open2015estimating triggered what is now known as the 'replication crisis' in psychological science, prompting researchers to question thus far widely unchallenged publications by and large.
+Since then, there has been an ongoing effort within the psychological research community to actively pursue replication of affected studies with important findings, aiming to reevaluate their validity and ultimately restore trust in the body of psychological knowledge. 
 As part of the Collaborative Replications and Education Project (CREP) project of @grahe2026crep, we aim to contribute to this endeavour by investigating the replicability of the results in 'Study 3' of @stellar2018awe: Awe and Humility. 
-In this study,  the authors hypothesize momentary experiences of awe to cause a temporary increase in humility. 
+In this study, the authors hypothesize momentary experiences of awe to cause a temporary increase in humility. 
 The authors operationalize this hypothesis by means of a randomized video intervention, designed to induce either a state of awe or a neutral state, with a subsequent evaluation on a behavioral measure of humility. 
 Both theoretical background and original study design are outlined in detail in the original publication of @stellar2018awe. 
 To ensure transparency, following the general recommendation of adopting the principles of open science [@schonbrodt2018forschungstransparenz], we have made all relevant materials for this replication study available on the platform Open Science Framework (OSF), in particular the preregistration form at <https://osf.io/537aq>.
@@ -72,9 +62,9 @@ To ensure transparency, following the general recommendation of adopting the pri
 
 ## A Direct Replication and Extension of Stellar et al. (2018)
 
-In this replication study, we aim to perform a direct replication of study 3 @stellar2018awe, adopting the authors orignial methodology and analysis to the best of our knowledge and possibilities, while further -- in addition -- extending the study design to allow for analyses of supplementary hypotheses, taking care to ensure the orginial study remains intact as an isolated part of our extended study design.
-As our recruitment of participants has taken place in germany, however, we have opted to translate the study material into german, in particular the audio track for the neutral condition video. 
-Our recruitment process follows the snowball sampling principle [@goodman1961snowball], so consequently our sample consits of mostly students, as well as their friends and relatives, resulting in demographic range that differs from to the original sample of @stellar2018awe. 
+In this replication study, we aim to perform a direct replication of study 3 @stellar2018awe, adopting the authors original methodology and analysis to the best of our knowledge and possibilities, while further -- in addition -- extending the study design to allow for analyses of supplementary hypotheses, taking care to ensure the original study remains intact as an isolated part of our extended study design.
+As our recruitment of participants has taken place in Germany, however, we have opted to translate the study material into German, in particular the audio track for the neutral condition video. 
+Our recruitment process follows the snowball sampling principle [@goodman1961snowball], so consequently our sample consists of mostly students, as well as their friends and relatives, resulting in demographic range that differs from to the original sample of @stellar2018awe. 
 All known deviations are documented in detail within the preregistration form. 
 For the direct replication, we aim to replicate the following hypothesis.
 
@@ -89,7 +79,7 @@ Based on this condition, we additionally investigate the following confirmatory 
 \item[H2:] Relative to a neutral control condition, the new awe inducing video increases humility in a behavioral measure.
 \end{itemize}\vspace{-1em}
 
-\noindent Furthermore, we aim to adress the narutal follow-up question of how the two experimental conditions compare by means of the following exploratory hypothesis.
+\noindent Furthermore, we aim to address the natural follow-up question of how the two experimental conditions compare by means of the following exploratory hypothesis.
 
 \begin{itemize}\vspace{-1em}
 \item[E1:] The new (more modern) awe inducing video leads to higher awe ratings compared to
@@ -104,7 +94,7 @@ The full list of all exploratory hypotheses is documented in the publicly availa
 
 # Method
 
-The scripts required for reproducing the following results have been made publicaly available on GitHub at <https://github.com/TiziSchuh/Stellar_Rep_01>.
+The scripts required for reproducing the following results have been made publicly available on GitHub at <https://github.com/TiziSchuh/Stellar_Rep_01>.
 The hypotheses, operationalizations, analysis plan, inference criteria, and sample size justification have been preregistered at <https://osf.io/537aq>. Open material and data can all be found at [https://osf.io/cy287](https://osf.io/cy287). 
 
 ## Participants
@@ -117,11 +107,9 @@ The final sample had a mean age of `r mean(demo$age, na.rm = TRUE) %>% round(1)`
 ## Measures and Materials
 
 We operationalized our hypotheses by measuring three variables. For the Independent Variable (IV), we measured the randomized video condition with levels "neutral", "awe original" and "awe modern".
-We then measured awe as an emotional state on a behavioral scale as as the mean of the three items "Staunen", "Faszination", with responses on a seven point likert scale each.
+We then measured awe as an emotional state on a behavioral scale as as the mean of the three items "Staunen", "Faszination", with responses on a seven point Likert scale each.
 
-For the Dependent Variable (DV), we measured the state of humility as the log-transformed ratio of listed personal strengths to weaknesses. The number of strengths and weaknesses are counted by two independent raters from the free-text answer of the participants in a writing exercise. We use the “Codebook Instructions for Counting Participant-Reported Strengths and Weaknesses” from https://doi.org/10.26443/msurj.v19i1.231 (see Appendix B). 
-
-Link to code-book!!!
+For the Dependent Variable (DV), we measured the state of humility as the log-transformed ratio of listed personal strengths to weaknesses. The number of strengths and weaknesses are counted by two independent raters from the free-text answer of the participants in a writing exercise. We use the “Codebook Instructions for Counting Participant-Reported Strengths and Weaknesses” from <https://doi.org/10.26443/msurj.v19i1.231> (see Appendix B). 
 
 
 ## Procedure
@@ -129,8 +117,8 @@ Link to code-book!!!
 Our study is a one-time, cross-sectional online study. 
 Participants are randomly assigned one of the three video conditions. We have provided an overview of the general steps within the study procedure in @fig-procedure.
 First, based on their respective condition, they will watch a corresponding video. 
-Subsequently, they will be asked to do a writing excercise, describing their strengths and weaknesess.
-After the excercise, they report on their emotional state. 
+Subsequently, they will be asked to do a writing exercise, describing their strengths and weaknesses.
+After the exercise, they report on their emotional state. 
 Finally they report on the control questions.
 The entire study material -- in particular the respective \texttt{FormR} files -- can be found on OSF.
 
@@ -143,11 +131,11 @@ The entire study material -- in particular the respective \texttt{FormR} files -
 
 ## Statistical Procedure
 
-For H1, we mirrored the statistical procedure applied by @stellar2018awe. To ensure approximate normal-distribution of the DV (humility), we transformed the data by using the natural logarithm^[We preregistered the use of the "natural" logarithm, while at the same time -- erroniously -- denoting the \texttt{R}-funtion "\texttt{log2}" in the final line of the paragraph. In the actual analysis, we have used the correct \texttt{R}-function "\texttt{log}" instead.], i.e. the final humility score for each participant $i$ was calculated as
+For H1, we mirrored the statistical procedure applied by @stellar2018awe. To ensure approximate normal-distribution of the DV (humility), we transformed the data by using the natural logarithm^[We preregistered the use of the "natural" logarithm, while at the same time -- erroneously -- denoting the \texttt{R}-funtion "\texttt{log2}" in the final line of the paragraph. In the actual analysis, we have used the correct \texttt{R}-function "\texttt{log}" instead.], i.e. the final humility score for each participant $i$ was calculated as
 \begin{equation*}
   y_{\textrm{humility},i} = \mathrm{ln}\left(\frac{N_{\textrm{strengths},i}}{N_{\textrm{weaknesses},i}}\right) \,.
 \end{equation*}
-This necessitated the exlucsion of participants who did not write down anything that was counted as a weakness according to the code-book. Together with the removal of outliers, characterized by the number of strengths or weaknesses being more than 3 SDs over the mean, the final sample for H1 had n=`r nrow(dat_H1)` valid participants. Using this sample, we calculated a one-sided two-group t-test comparing the log-transformed balance score of the neutral video vs the awe original video at significance level $\alpha$=.05.
+This necessitated the exclusion of participants who did not write down anything that was counted as a weakness according to the code-book. Together with the removal of outliers, characterized by the number of strengths or weaknesses being more than 3 SDs over the mean, the final sample for H1 had n=`r nrow(dat_H1)` valid participants. Using this sample, we calculated a one-sided two-group t-test comparing the log-transformed balance score of the neutral video vs the awe original video at significance level $\alpha$=.05.
  For H2, we applied the same transformation and exclusions described above, yielding n=`r nrow(dat_H2)` valid participants for the final sample, for which we calculated a two-group t-test comparing the log-transformed balance score of the neutral video vs the awe new video.
 
 For E1, we calculated the Cohen's $d$ effect size [@cohen1988spa] comparing the awe-score averages in the original video condition to the new video condition. maybe significance test...
@@ -168,13 +156,13 @@ On the DV (humility), we observed the mean=`r round(mean(dat_H1$balance_log),dig
 
 ## Confirmatory Results
 
-For H1, the result of the t-test was `r apa_print(t_H1)$full_result`. Based on this, we reject the alternative hypothesis (the orignial awe video increses humility relative to the neutral condition) given the p-value p=`r round(t_H1$p.value, digits = 3)` exceeding the significance level $\alpha$=.05.
+For H1, the result of the t-test was `r apa_print(t_H1)$full_result`. Based on this, we reject the alternative hypothesis (the original awe video increases humility relative to the neutral condition) given the p-value p=`r round(t_H1$p.value, digits = 3)` exceeding the significance level $\alpha$=.05.
 
-For H2, the result of the t-test was `r apa_print(t_H2)$full_result`. Based on this, we reject the alternative hypothesis (the new awe video increses humility relative to the neutral condition) given the p-value p=`r round(t_H2$p.value, digits = 3)` exceeding the significance level $\alpha$=.05.
+For H2, the result of the t-test was `r apa_print(t_H2)$full_result`. Based on this, we reject the alternative hypothesis (the new awe video increases humility relative to the neutral condition) given the p-value p=`r round(t_H2$p.value, digits = 3)` exceeding the significance level $\alpha$=.05.
 
 ## Exploratory Results
 
-Calculating Cohen's d for E1 (comparing new and old video w.r.t. inducing high levels of awe) yielded an effect size of `r round(d_E1, digits = 2)` with 95% CI [`r round(ci_d_E1$Lower.Conf.Limit.smd, digits = 2)`,`r round(ci_d_E1$Upper.Conf.Limit.smd, digits = 2)`]. 
+Calculating Cohen's d for E1 (comparing new and old video with respect to inducing high levels of awe) yielded an effect size of `r round(d_E1, digits = 2)` with 95% CI [`r round(ci_d_E1$Lower.Conf.Limit.smd, digits = 2)`,`r round(ci_d_E1$Upper.Conf.Limit.smd, digits = 2)`]. 
 
 
 # Discussion
@@ -187,22 +175,23 @@ All in all, our results do not support the findings of @stellar2018awe.
 
 ## Limitations and Future Directions
 
-Although we aimed for a direct replication to the best of our knowledge and possibilities, there are some discrepancies to keep in mind. Most notably, the participants for our replication were recruited using a snowball sampling approach. 
+Although we aimed for a direct replication to the best of our knowledge and possibilities, there are some discrepancies to keep in mind. First, the participants for our replication were recruited using a snowball sampling approach. 
 As a result, the age in our sample was substantially lower on average. 
 Especially in conjunction with the fact, that our replication has taken place more than eight years after the publication of @stellar2018awe, it may be possible, that participants in our sample are generally more used to watching such videos, possibly resulting in a substantial reduction of the actual amount of awe being induced, compared to participants in the original study. 
-The similarily high levels on the self-reported awe scale may have simply been positivley skewed by acquiescence. 
+The similarly high levels on the self-reported awe scale may have simply been positively skewed by acquiescence. 
 In the future, alternative ways to induce awe may be explored.
-Furthermore, as we have translated the awe scale into german, we cannot a priori rule out possible measurement non-invariances, which could also causally explain why the effect was not reproduced. 
+
+Second, as we have translated the awe scale into German, we cannot a priori rule out possible measurement non-invariances, which could also causally explain why the effect was not reproduced [@schuhbeck2026effectbased]. 
 This may be subject to further investigation in future replication studies.
 
 Finally, the fact that we only achieved a power of around .70 arguably forms the biggest limitation of our replication. 
-A well known fact in empirical research is that "lack of evidence is not evidence of absence" [@altman1995statistics]. 
+A well-known fact in empirical research is that "lack of evidence is not evidence of absence" [@altman1995statistics]. 
 Hence, based solely on the finding presented here, we cannot and should not rule out, that the power was simply not big enough to detect the investigated effect. 
-This limitation, however, already being adressed precisely by the ongoing CREP project, as well as previous replications of this study [@bertrand2024replication].
+However, this limitation is already being addressed precisely by the ongoing CREP project, and other replication attempts for this study [e.g., @bertrand2024replication].
 
 ## Conclusion
 
-Essenz in 2-3 Sätzen.
+We replicated 'Study 3' of @stellar2018awe. We were not able to reproduce the effect, although we cannot rule out that this may be due to low power. As part of the CREP project, our results will be part of a more definitive investigation of the reproducibility of this effect with sufficiently high power.
 
 
 # References
