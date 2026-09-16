@@ -187,15 +187,18 @@ All in all, our results do not support the findings of @stellar2018awe.
 
 ## Limitations and Future Directions
 
-Known differences. 
+Although we aimed for a direct replication to the best of our knowledge and possibilities, there are some discrepancies to keep in mind. Most notably, the participants for our replication were recruited using a snowball sampling approach. 
+As a result, the age in our sample was substantially lower on average. 
+Especially in conjunction with the fact, that our replication has taken place more than eight years after the publication of @stellar2018awe, it may be possible, that participants in our sample are generally more used to watching such videos, possibly resulting in a substantial reduction of the actual amount of awe being induced, compared to participants in the original study. 
+The similarily high levels on the self-reported awe scale may have simply been positivley skewed by acquiescence. 
+In the future, alternative ways to induce awe may be explored.
+Furthermore, as we have translated the awe scale into german, we cannot a priori rule out possible measurement non-invariances, which could also causally explain why the effect was not reproduced. 
+This may be subject to further investigation in future replication studies.
 
-Unkown differences.
-
-Power actually only .70
-
-Also, we have not tested for MI, explicitely investigating to what extent the translation may have an impact on the reproducability of the effect would adress this limitation. 
-
-lack of evidence is not evidence of absence [@altman1995statistics]. Based solely on the finding presented here, we cannot and should not rule out, that the power was simply not big enough. This limitation, however, is already being adressed precisely by the ongoing CREP project.
+Finally, the fact that we only achieved a power of around .70 arguably forms the biggest limitation of our replication. 
+A well known fact in empirical research is that "lack of evidence is not evidence of absence" [@altman1995statistics]. 
+Hence, based solely on the finding presented here, we cannot and should not rule out, that the power was simply not big enough to detect the investigated effect. 
+This limitation, however, already being adressed precisely by the ongoing CREP project, as well as previous replications of this study [@bertrand2024replication].
 
 ## Conclusion
 
